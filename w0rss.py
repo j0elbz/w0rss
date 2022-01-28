@@ -78,7 +78,7 @@ def port_scanner(ip) -> None:
 			else:
 				state = f"{Fore.RED} Close"
 
-			print(Fore.WHITE, f"{proto} Port > %sState > %s" % (port,state))
+			print(Fore.WHITE, f"{proto} Port > %sState > %s" % (f"{port} {state}"))
 			if count == 0:
 				open_ports = open_ports + str(port)
 				count = 1
